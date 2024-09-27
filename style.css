@@ -1,0 +1,122 @@
+body {
+    border: 30px black;
+    background-color: black;
+}
+
+.menu-navegacao {
+    color: gold;
+    background-color: rgb(36, 36, 36, 0.8);
+    flex-wrap: nowrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 26px;
+}
+
+.apresentacao {
+    background-color: rgb(36, 36, 36, 0.8);
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.apresentacao h1 {
+    color: red;
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(36, 36, 36, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.temas {
+    background-color: rgb(36, 36, 36, 0.8);
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 30px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.temas h1 {
+    color: greenyellow;
+    text-align: center;
+}
+
+.temas ul {
+    font-size: 30px;
+}
+
+.lista-obras {
+    background-color: rgb(36, 36, 36, 0.8);
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: left;
+    padding: 30px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.lista-obras h1 {
+    color: aqua;
+    text-align: center;
+}
+
+.lista-obras ul {
+    font-size: 30px;
+}
+
+.rodape {
+    background-color: rgb(36, 36, 36, 0.8);
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: gold
+}
+
+.menu-navegacao a:visited {
+    color: gold;
+}
+
+.autor {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 36, 36, 0.8);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: aliceblue;
+    font-size: 28px;
+}
+
+.autor table {
+    border-collapse: collapse;
+    justify-content: space-around;
+}
+
+.autor th, td {
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+}
