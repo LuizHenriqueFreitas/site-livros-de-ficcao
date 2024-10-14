@@ -15,13 +15,18 @@ body {
     font-size: 26px;
 }
 
+.menu-navegacao li {
+    display: inline;
+}
+
 .apresentacao {
     background-color: rgb(36, 36, 36, 0.8);
     color: rgb(255, 249, 213);
     flex-wrap: wrap;
     align-items: center;
     padding: 30px;
-    text-align: center;
+    text-align: left;
+    text-indent: 10%;
     font-size: 25px;
 }
 
@@ -36,14 +41,15 @@ body {
     flex-direction: row;
     justify-content: space-around;
     background-color: rgb(36, 36, 36, 0.8);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 25px;
+    flex-direction: row;
+    gap: 50px;
+
 }
 
 .temas {
     background-color: rgb(36, 36, 36, 0.8);
     color: rgb(255, 249, 213);
-    flex-wrap: wrap;
     align-items: left;
     padding: 30px;
     font-size: 25px;
@@ -71,6 +77,9 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    max-width: 50vw;
+    text-indent: 20px;
+    text-align: justify;
 }
 
 .lista-obras h1 {
@@ -109,14 +118,110 @@ body {
     padding-bottom: 10px;
     color: aliceblue;
     font-size: 28px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 }
+/*CSS da tabela antiga */
+/*
+     .autor-nome {
+        display: flex;
+        flex-direction: row;
+        border:5px rgba(255, 208, 0, 0.8);
+        justify-content: space-around;
+    } 
 
-.autor table {
-    border-collapse: collapse;
-    justify-content: space-around;
+     .autor-dados {
+        display: flex;
+        flex-direction: row;
+        border:5px rgba(255, 208, 0, 0.8);
+    }
+
+    .autor-celulas {
+        padding: 10px;
+    } 
+
+    
+     .autor-celulas ul {
+    text-wrap: nowrap;
+    flex-direction: row;
+    font-size: 2vw;
+    line-height: 10vh;
+    }
+
+    .autor-celulas li {
+    text-wrap: wrap;
+    }
+
+    .autor-celulas img {
+    display: flex;
+    max-width: 350px;
+    max-height: 500px;
+    } 
+*/ 
+.autor p {
+    text-align: justify;
+    text-indent: 2em;
+    margin: 25px;
 }
-
-.autor th, td {
-    border: 5px solid rebeccapurple;
+  
+.linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+.conteudo {
+    flex: 1;
     padding: 10px;
+    box-sizing: border-box;
+   }
+
+.conteudo img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid greenyellow;
+    border-radius: 5px;
+    box-shadow: 0 0 20px greenyellow;
+   }
+  
+.pais-nome-livros {
+    flex: 2;
+    border: 1px solid deeppink;
+    border-radius: 5px;
+    box-shadow: 0 0 20px deeppink;
+    text-align: center;
+    padding: 10px;
+   }
+
+.livros {
+    flex: 2;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    box-shadow: 0 0 20px cyan;
+   }
+
+.livros li {
+    padding: 20px;
+    text-align: left;
+}
+  
+.autor-nome {
+    flex: 3;
+    border: 1px solid gold;
+    border-radius: 5px;
+    box-shadow: 0 0 20px gold;
+    text-align: center;
+    padding: 10px;
+   }
+  
+/*responsividades gerais*/
+@media (max-width: 768px) {
+    .apresentacao {
+        text-indent: 0;
+    }
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
 }
