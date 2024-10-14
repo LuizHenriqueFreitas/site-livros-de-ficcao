@@ -1,6 +1,7 @@
 body {
     border: 30px black;
     background-color: black;
+    margin: 0;
 }
 
 .menu-navegacao {
@@ -17,16 +18,49 @@ body {
 
 .menu-navegacao li {
     display: inline;
+    position: relative;
 }
 
-.apresentacao {
+.box-escurecer {
     background-color: rgb(36, 36, 36, 0.8);
     color: rgb(255, 249, 213);
     flex-wrap: wrap;
     align-items: center;
     padding: 30px;
     text-align: left;
-    text-indent: 10%;
+    text-indent: 20px;
+    font-size: 25px;
+}
+
+.box1 {
+    background-color: rgb(36, 36, 36, 0.8);
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    text-align: left;
+    text-indent: 5vw;
+    font-size: 25px;
+    border: 1px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 20px red;
+}
+
+.galaxia {
+    background-image: url(imagens/galaxia.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apresentacao {
+    /* background-color: rgb(36, 36, 36, 0.8); */
+    color: rgb(255, 249, 213);
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    text-align: left;
+    text-indent: 10vw;
     font-size: 25px;
 }
 
@@ -40,7 +74,7 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(36, 36, 36, 0.8);
+    /* background-color: rgb(36, 36, 36, 0.8); */
     padding: 25px;
     flex-direction: row;
     gap: 50px;
@@ -56,6 +90,8 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+    border: 1px solid greenyellow;
+    box-shadow: 0 0 13px rgba(123, 255, 0, 0.6);
 }
 
 .temas h1 {
@@ -80,6 +116,8 @@ body {
     max-width: 50vw;
     text-indent: 20px;
     text-align: justify;
+    border: 1px solid cyan;
+    box-shadow: 0 0 13px rgba(0, 195, 255, 0.6);
 }
 
 .lista-obras h1 {
@@ -113,7 +151,8 @@ body {
 .autor {
     display: flex;
     justify-content: center;
-    background-color: rgb(36, 36, 36, 0.8);
+    background-color: black;
+    /* background-color: rgb(36, 36, 36, 0.8); */
     padding-top: 10px;
     padding-bottom: 10px;
     color: aliceblue;
@@ -192,6 +231,7 @@ body {
     box-shadow: 0 0 20px deeppink;
     text-align: center;
     padding: 10px;
+    background-color: black;
    }
 
 .livros {
@@ -199,6 +239,7 @@ body {
     border: 1px solid cyan;
     border-radius: 5px;
     box-shadow: 0 0 20px cyan;
+    background-color: black;
    }
 
 .livros li {
@@ -213,6 +254,7 @@ body {
     box-shadow: 0 0 20px gold;
     text-align: center;
     padding: 10px;
+    background-color: black;
    }
   
 /*responsividades gerais*/
@@ -224,4 +266,61 @@ body {
         flex-direction: column;
         align-items: center;
     }
+}
+
+/*adição do fundo particular de cada altor*/
+/*JV = Julio Verner*/
+.JV {
+    background-image: url('imagens/Nautilus-JV.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.5; */
+}
+
+/*DA = Douglas Adans*/
+.DA {
+    background-image: url('imagens/Muchileiro-DA.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px black;
+}
+
+/*WG = Willian Gibson*/
+.WG {
+    background-image: url('imagens/Neuromancer-WG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px black;
+}
+
+.apoio {
+    height: 70vh;
+    margin: 0;
+}
+
+#flag {
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+#esconde-texto, #mostra-texto{
+    position: absolute;
+    align-items: center;
+    right: 40px;
+    top: 130px;
+    color: black;
+    background-color: gold;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+#esconde-texto:hover, #mostra-texto:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
 }

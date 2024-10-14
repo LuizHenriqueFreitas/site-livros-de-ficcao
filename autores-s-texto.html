@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autores Recomendados</title>
+</head>
+<body>
+    <div class="menu-navegacao">
+        <a href="index.html"><div><h1>Início</h1></div></a>
+        <div><button id="mostra-texto">Mostrar texto</button></div>
+        <ul>
+            <li><a href="autores-s-texto.html">Autores</a> / </li>
+            <li><a href="Temas.html">Temas</a> / </li>
+            <li>Mais</li>
+        </ul>
+    </div>
+    <br>
+    <!--Autor 1-->
+    <div class="autor JV apoio"> </div>
+<!--Autor 2-->
+    <div class="autor DA apoio"> </div>
+<!--Autor 3-->
+    <div class="autor WG apoio"> </div>
+    <br>
+    <div class="rodape">
+        <p>Direitos reservados - ifsp-cjo 2024</p>
+        <p>Contato em hzimeness@gmail.com || @luizbacalhauau</p>
+    </div>
+    <script src="acoes-simples.js"></script>
+    <script>
+      function MostraCoisas() {
+    window.location.href = 'autores.html';
+}
+
+document.getElementById('mostra-texto').addEventListener('click', MostraCoisas);
+    </script>
+</body>
+</html>
