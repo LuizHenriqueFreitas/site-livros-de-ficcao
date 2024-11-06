@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Temas</title>
 </head>
 <body>
@@ -12,7 +12,8 @@
         <ul>
             <li><a href="autores.html">Autores</a> / </li>
             <li><a href="Temas.html">Temas</a> / </li>
-            <li>Mais</li>
+            <li><a href="Livros.html">Livros</a> / </li>
+            <li><a href="sobre-mais.html">Mais</a></li>
         </ul>
     </div>
     <br>
@@ -29,6 +30,9 @@
         <div class="lista-obras">
             <h1>Fantasia</h1>
             <p>Este tipo de cenário é muito comum e uma das mais populares, uma vez que se mistura muito bem com obras baseadas na realidade. Existem muitos livros sobre o tema e inclusive algumas adaptações em filmes. Essa estética inclui o famoso medieval, com cavaleiros, dragões e castelos, além de coisas mais modernas, como na saga Harry Potter.</p>
+            <div id="resumFantasia" class="resumo">
+                <p></p>
+            </div>
         </div>
         <div class="temas">
             <h1>Livros Relacionados</h1>
@@ -70,7 +74,7 @@
                     <div class="nomes-carrocel"><p>Os Três Mosqueteiros</p></div>
                 </div>
             </div>
-            <a href="#">Confira estes, mais Livros, sinópses e análises.</a>
+            <a href="Livros.html">Confira estes, mais Livros e suas sinópses.</a>
         </div>
     </div>
     
@@ -78,6 +82,7 @@
         <div class="lista-obras">
             <h1>Exploração No Século XIX</h1>
             <p>Um cenário muito próximo a realidade, que começa a surgir no final do século XIX. No alge de produção dos livros com esse tema, ainda haviam muitas partes inexploradas no mundo, muito antes dos satélites e da internet, usando isso os autores aproveitavam para criar realidades com monstros mitológicos e aventuras lendárias. Muitos leitores ficavam abismados com as histórias, já que na época, muitos pensavam serem histórias reias, assim como muitos pensavam que Sherlock Holmes fosse uma pessoa real.</p>
+            <div class="resumo" id="resumCiencia"></div>
         </div>
         <div class="temas">
             <h1>Livros Relacionados</h1>
@@ -123,7 +128,7 @@
                     <div class="nomes-carrocel"><p>O Corvo</p></div>
                 </div>
             </div>
-            <a href="#">Confira estes, mais Livros, sinópses e análises.</a>
+            <a href="Livros.html">Confira estes, mais Livros e suas sinópses.</a>
         </div>
     </div>
 
@@ -131,6 +136,7 @@
         <div class="lista-obras">
             <h1>Jornada Espacial</h1>
             <p>Outro contexto muito pular que sempre é lembrado são as viagens espaciais, alienígenas inteligentes super desenvolvidos, naves e destruição galática, novos seres nunca antes vistos pelos humanos aqui na terra. Essa "divisão" da ficção é composta pela maior parte das aparições de dispositivos ultra tecnológicos como Ologramas, tele transportes viajens no tempo entre outras ferramentas famosas da ficção, normalmente usadas para dar uma justificativa na narrativa, ou sendo o centro da trama, como no caso de viajens no tempo (que poderia ser uma categoria por si só).</p>
+            <div class="resumo" id="resumGalaxia"></div>
         </div>
         <div class="temas">
             <h1>Livros Relacionados</h1>
@@ -153,8 +159,8 @@
                     vertical-align: auto;
                     margin-left: 50px;
                     ">
-                    <a class="carrosel-volta" style="left: 50px;" onclick="vaiVoltaCarrocel(-1, 'espaco')">&#10094;</a>
-                    <a class="carrosel-vai" style="right: 47px;" onclick="vaiVoltaCarrocel(1, 'espaco')">&#10095;</a>
+                    <a class="carrosel-volta" style="left: 10%;" onclick="vaiVoltaCarrocel(-1, 'espaco')">&#10094;</a>
+                    <a class="carrosel-vai" style="right: 10%;" onclick="vaiVoltaCarrocel(1, 'espaco')">&#10095;</a>
                     <div class="nomes-carrocel"><p>O Guia Do Muchileiro Das Galáxias</p></div>
                 </div>
                 <div class="espaco fade">
@@ -164,7 +170,7 @@
                     <div class="nomes-carrocel"><p>Fundação</p></div>
                 </div>
             </div>
-            <a href="#">Confira estes, mais Livros, sinópses e análises.</a>
+            <a href="Livros.html">Confira estes, mais Livros e suas sinópses.</a>
         </div>
     </div>
 
@@ -172,6 +178,7 @@
         <div class="lista-obras">
             <h1>Realidades Distópicas</h1>
             <p>As ficções de Distopia tratam uma realidade degradada pela própria humanidade, ou por algum evente externo. Muitas vezes trazendo reflexões sobre a degradação causada ao meio ambiente, dilemas de sobrevivência, e outras criticas sociais, feitas pelo autor da história, referentes a data e local de acordo com a vida do autor. Em seus livros da década de 1980-90 Willian Gibson já trazia indagações sobre o aquecimento global e o capitalismo tardio, tudo de maneira ficcional.</p>
+            <div id="resumDistopia" class="resumo"></div>
         </div>
         <div class="temas">
             <h1>Livros Relacionados</h1>
@@ -213,7 +220,7 @@
                     <div class="nomes-carrocel"><p>O homem do castelo alto</p></div>
                 </div>
             </div>
-            <a href="#">Confira estes, mais Livros, sinópses e análises.</a>
+            <a href="Livros.html">Confira estes, mais Livros e suas sinópses.</a>
         </div>
     </div>
     <br>
@@ -223,70 +230,79 @@
         <p>Contato em hzimeness@gmail.com || @luizbacalhauau</p>
     </div>
 
-    <script src="acoes-simples.js"></script>
+    <script src="scripts/resumos.js"></script>
     <script>
-    
-    let carrocelIndexFantasia = 1;
-    let carrocelIndexExploracao = 1;
-    let carrocelIndexDistopia = 1;
-    let carrocelIndexEspaco = 1;
-    
-    let x = "fantasia";
-    let y = "exploracao";
-    let z = "distopia";
-    let e = "espaco";
-    
-    mostraCarrocel(carrocelIndexFantasia, x);
-    mostraCarrocel(carrocelIndexExploracao, y);
-    mostraCarrocel(carrocelIndexDistopia, z);
-    mostraCarrocel(carrocelIndexEspaco, e);
+        let ResFantasia = document.getElementById("resumFantasia");
+        let ResCiencia = document.getElementById("resumCiencia");
+        let ResGalaxia = document.getElementById("resumGalaxia");
+        let ResDistopia = document.getElementById("resumDistopia");
 
-    //controle de próximo e anterior
-    function vaiVoltaCarrocel(n, categoria) {
-    if (categoria === x) {
-            carrocelIndexFantasia += n;
-            mostraCarrocel(carrocelIndexFantasia, categoria);
-        } else if (categoria === y) {
-            carrocelIndexExploracao += n;
-            mostraCarrocel(carrocelIndexExploracao, categoria);
-        } else if (categoria === z) {
-            carrocelIndexDistopia += n;
-            mostraCarrocel(carrocelIndexDistopia, categoria);
-        } else if (categoria === e) {
-            carrocelIndexEspaco += n;
-            mostraCarrocel(carrocelIndexEspaco, categoria);
+        let carrocelIndexFantasia = 1;
+        let carrocelIndexExploracao = 1;
+        let carrocelIndexDistopia = 1;
+        let carrocelIndexEspaco = 1;
+        
+        let x = "fantasia";
+        let y = "exploracao";
+        let e = "distopia";
+        let z = "espaco";
+        
+        mostraCarrocel(carrocelIndexFantasia, x);
+        mostraCarrocel(carrocelIndexExploracao, y);
+        mostraCarrocel(carrocelIndexDistopia, z);
+        mostraCarrocel(carrocelIndexEspaco, e);
+
+        //controle de próximo e anterior
+        function vaiVoltaCarrocel(n, categoria) {
+            if (categoria === x) {
+                carrocelIndexFantasia += n;
+                mostraCarrocel(carrocelIndexFantasia, categoria);
+            } else if (categoria === y) {
+                carrocelIndexExploracao += n;
+                mostraCarrocel(carrocelIndexExploracao, categoria);
+            } else if (categoria === z) {
+                carrocelIndexDistopia += n;
+                mostraCarrocel(carrocelIndexDistopia, categoria);
+            } else if (categoria === e) {
+                carrocelIndexEspaco += n;
+                mostraCarrocel(carrocelIndexEspaco, categoria);
+            }
         }
-    }
 
 
-    function mostraCarrocel(n, onde) {
-        let i;
-        let imagens = document.getElementsByClassName(onde);
-        let totalImagens = imagens.length;
-        // Looping logic
-        if (n > totalImagens) {
-            n = 1; // Reset to the first image
+        function mostraCarrocel(n, onde) {
+            let i;
+            let imagens = document.getElementsByClassName(onde);
+            let totalImagens = imagens.length;
+            
+            if (n > totalImagens) {
+                n = 1; 
+            }
+            if (n < 1) {
+                n = totalImagens; 
+            }
+            
+            for (i = 0; i < totalImagens; i++) {
+                imagens[i].style.display = "none";
+            }
+            
+            imagens[n - 1].style.display = "block";
+            
+            if (onde === x) {
+                ResFantasia.innerHTML = (`<p>Sinópse: ${resFantasiaDados[n-1].Sinopse}</p>`);
+                carrocelIndexFantasia = n;
+            } else if (onde === y) {
+                ResCiencia.innerHTML = (`<p>Sinópse: ${resCienciaDados[n-1].Sinopse}</p>`);
+                carrocelIndexExploracao = n;
+            } else if (onde === z) {
+                ResGalaxia.innerHTML = (`<p>Sinópse: ${resGalaxiaDados[n-1].Sinopse}</p>`);
+                carrocelIndexDistopia = n;
+            } else if (onde === e) {
+                ResDistopia.innerHTML = (`<p>Sinópse: ${resDistopiaDados[n-1].Sinopse}</p>`);
+                carrocelIndexEspaco = n;
+            }
         }
-        if (n < 1) {
-            n = totalImagens; // Reset to the last image
-        }
-        // Hide all images
-        for (i = 0; i < totalImagens; i++) {
-            imagens[i].style.display = "none";
-        }
-        // Show the correct image
-        imagens[n - 1].style.display = "block";
-        // Update the appropriate index
-        if (onde === x) {
-            carrocelIndexFantasia = n;
-        } else if (onde === y) {
-            carrocelIndexExploracao = n;
-        } else if (onde === z) {
-            carrocelIndexDistopia = n;
-        } else if (onde === e) {
-            carrocelIndexEspaco = n;
-        }
-    }
     </script>
+    
 </body>
 </html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Temas</title>
+</head>
+<body>
+    <div class="menu-navegacao">
+        <a href="index.html"><div><h1>Início</h1></div></a>
+        <ul>
+            <li><a href="autores.html">Autores</a> / </li>
+            <li><a href="Temas.html">Temas</a> / </li>
+            <li><a href="Livros.html">Livros</a> / </li>
+            <li><a href="sobre-mais.html">Mais</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="galaxia">
+        <div class="apresentacao">
+            <h1>Sobre os criadores do site</h1>
+            <div class="box1">
+            <p>A Polo42 é uma empresa que trabalha no desenvolvimento de softwares e aplicações web desde 2018, com sua cede em campinas, interior de SP, é uma desenvolvedora reconhecida pela prestatividade e eficiencia de suas aplicações.</p>
+            <p>Além do GUIA DO LEITOR DE FICÇÂO, focado em livros de ficção, a Polo42 também esta envolvida no desenvolvimento de <a href="">LUZ CÂMERA AÇÃO</a>, focado em cinema no geral, e <a href="">RITIMO FLUENTE</a>, focado em música, além de outros projetos.</p>
+            <p>Acreditamos que acesso a cultura é essencial, por isso a Polo42 mantem estes sites focados nas artes. O intúito desses sites é, principalmente, documentar, organizar e descrever o quais são os temas e gírias e dialétos específicos de determinados universos e grupos de fãs, quem são os autores, compositores, profutores ou diretores, personagens, suas motivações e demais informações que possam ser relevantes.</p>
+            <p>Caso tenha interesse, clicando no botão abaixo você pode nos enviar sua análise de um livro que você tenha lido, esteja ele catalogado neste site ou não, só pedimos que ele se enquadre no tema de alguma forma, para facilitar nosso processo de revisão e separação. Se quiser fazer uma crítica, reclamação ou sugestão de melhoria ao site, o mesmo botão pode ser usado para acessar o formulário.</p>
+        </div>
+        <div class="botao-analise">
+            <button id="enviaForm">Envie sua análise ou sugestão.</button>
+        </div>
+        <div id="janelaFlutuante" class="janelaF">
+            <div class="conteudoJanelaF">
+                <span class="fecha">&times;</span>
+                <h2>Envie sua análise, crítica ou sujestão.</h2>
+                <p>Para isso preencha as informações a baixo, por favor.</p>
+                <form action="enviar" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="tipo">O que gostaria de nos dizer?</label><br>
+                    <select name="tipo" id="tipo"required>
+                        <option value="analise">Análise de obra.</option>
+                        <option value="sugestao">Sugestão de melhoria para o site.</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select><br><br>
+                    
+                    <label for="mensagem">Escreva sua mensagem:</label><br>
+                    <textarea name="mensagem" id="mensagem" rows="10" cols="50" required></textarea><br>
+
+                    <button id="fechaForm">Enviar</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <br>
+    <div class="rodape">
+        <p>Direitos reservados - ifsp-cjo 2024</p>
+        <p>Contato em hzimeness@gmail.com || @luizbacalhauau</p>
+    </div>
+
+    <script>
+        let janela = document.getElementById("janelaFlutuante");
+        let botaoForm = document.getElementById("enviaForm");
+        let fechar = document.getElementsByClassName("fecha");
+        let envia = document.getElementById("fechaForm");
+
+        botaoForm.onclick = function(){
+            janela.style.display = "block";
+        }
+
+        fechar.onclick = function() {
+            janela.style.display = "none";
+        }
+
+        envia.onclick = function() {
+            janela.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if(event.target == janela) {
+                janela.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
