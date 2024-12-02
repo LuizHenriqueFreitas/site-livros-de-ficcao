@@ -47,7 +47,7 @@ body {
 }
 
 .galaxia {
-    background-image: url(/imagens/galaxia.jpeg);
+    background-image: url(../imagens/galaxia.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -290,7 +290,7 @@ body {
 /*adição do fundo particular de cada altor*/
 /*JV = Julio Verner*/
 .JV {
-    background-image: url(/imagens/Nautilus-JV.jpg);
+    background-image: url(../imagens/Nautilus-JV.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -299,7 +299,7 @@ body {
 
 /*DA = Douglas Adans*/
 .DA {
-    background-image: url(/imagens/Muchileiro-DA.jpg);
+    background-image: url(../imagens/Muchileiro-DA.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +308,7 @@ body {
 
 /*WG = Willian Gibson*/
 .WG {
-    background-image: url(/imagens/Neuromancer-WG.jpg);
+    background-image: url(../imagens/Neuromancer-WG.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -417,28 +417,28 @@ body {
 }
 
 .Medieval {
-    background-image: url(/imagens/fundomedieval.jpg);
+    background-image: url(../imagens/fundomedieval.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .Ciencia {
-    background-image: url(/imagens/exploracaofundo.jpg);
+    background-image: url(../imagens/exploracaofundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .Galaxia {
-    background-image: url(/imagens/espacofundo.jpg);
+    background-image: url(../imagens/espacofundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .Cyberpunk {
-    background-image: url(/imagens/distopiafundo.jpg);
+    background-image: url(../imagens/distopiafundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
